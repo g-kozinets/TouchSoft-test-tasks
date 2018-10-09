@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link href="task.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="task.js"></script>
+</head>
+<body>
+    <div id="control-panel">
+        <div id="butt_col">
+            <input type="button" id="add-button" value="Add cell" onclick="addCells()">
+            <input type="button" id="start-button" value="Start" onclick="start()">
+            <input type="button" id="move-minus" value="Move 0" onclick="moveKMinus()">
+            <input type="button" id="moveK" value="Move 1" onclick="moveK()">
+            <input type="button" id="move-plus" value="Move 2" onclick="moveKPlus()">
+            <input type="button" id="undo" value="Undo" onclick="undo()">
+        </div>
+        <ul id="history"></ul>
+    </div>
+    <ul id="cell-list">
+        <li style="background: red" id="0">●</li>
+        <li id="1">●</li>
+    </ul>
+</body>
+</html>
